@@ -1,0 +1,23 @@
+@import '../../../../Styles/variables.less';
+
+.menu {
+  display: flex;
+  margin-top: 4px;
+}
+
+.createButton {
+  font-family: @font-arial;
+  display: flex;
+  font-size: @font-tiny;
+  align-items: center;
+  margin-left: 24px;
+  background: @color-blue;
+  padding: 8px;
+  color: @color-white;
+  border-radius: 17px;
+  border: 1px solid @color-lightblue;
+  cursor: pointer;
+  &:hover {
+    background: @color-blue * 1.1;
+  }
+}

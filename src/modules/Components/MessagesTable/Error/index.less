@@ -1,0 +1,32 @@
+@import '../../../../Styles/variables.less';
+
+.button {
+  background: @color-blue;
+  color: @color-white;
+  border: none;
+  font-weight: 600;
+  padding: 12px 24px;
+  font-size: 14px;
+  margin-top: 12px;
+  outline: none;
+  border-radius: 4px;
+  transition: 150ms;
+  &:hover {
+    background-color: @color-blue * 1.1;
+    cursor: pointer;
+  }
+}
+
+.emptyMessage {
+  text-align: center;
+  margin-top: 128px;
+  font-size: 18px;
+  font-family: @font-arial;
+}
+
+.errorMessage {
+  width: 500px;
+  margin: 0 auto;
+  color: @color-red;
+  font-weight: bold;
+}

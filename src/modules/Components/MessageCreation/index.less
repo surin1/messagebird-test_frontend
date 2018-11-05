@@ -1,0 +1,97 @@
+@import '../../../Styles/variables.less';
+@import '../../../Styles/mixins.less';
+
+.modal {
+  position: absolute;
+  padding: 16px;
+  background-color: @color-white;
+  font-family: @font-arial;
+  outline: none;
+  width: 540px;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: @color-overlay;
+}
+
+.contacts {
+  display: flex;
+  margin: 12px 0;
+}
+
+.title {
+  .small-title-gray();
+}
+
+.input {
+  border: 1px solid @color-bgblue;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  transition: 150ms;
+  &:focus {
+    background: @color-white / 1.1;
+  }
+  &:first-child {
+    margin-right: 12px;
+  }
+}
+
+.textarea {
+  border: 1px solid @color-bgblue;
+  border-radius: 4px;
+  padding: 10px 10px 20px 10px;
+  min-height: 150px;
+  outline: none;
+  transition: 150ms;
+  resize: none;
+  &:focus {
+    background: @color-white / 1.1;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background: @color-blue;
+  color: @color-white;
+  border: none;
+  font-weight: 600;
+  padding: 12px 24px;
+  font-size: 14px;
+  margin-top: 12px;
+  outline: none;
+  border-radius: 4px;
+  transition: 150ms;
+  &:hover {
+    background-color: @color-blue * 1.1;
+    cursor: pointer;
+  }
+  &[disabled] {
+   background: @color-disabled; 
+   cursor: default;
+  }
+}
+
+.errorText {
+  margin: 12px 0;
+  color: @color-red;
+  font-size: 14px;
+  font-weight: bold;
+}

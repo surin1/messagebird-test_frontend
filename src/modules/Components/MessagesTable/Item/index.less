@@ -1,0 +1,17 @@
+@import '../../../../Styles/variables.less';
+
+.item {
+  border-bottom: 1px solid @color-bgblue;
+  transition: background 150ms;
+  td {
+    padding: 12px 24px;
+    font-size: @font-small;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+  &:hover {
+    background: @color-lightblue;
+    cursor: pointer;
+  }
+}
